@@ -1,0 +1,23 @@
+{
+  "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/Codable/WriteBatch+WriteEncodable.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/WriteBatch+WriteEncodable.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/WriteBatch+WriteEncodable.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/WriteBatch+WriteEncodable.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/WriteBatch+WriteEncodable.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/WriteBatch+WriteEncodable.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/PropertyWrapper/FirestoreQuery.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQuery.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQuery.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQuery.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQuery.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQuery.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/PropertyWrapper/FirestoreQueryObservable.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQueryObservable.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQueryObservable.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQueryObservable.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQueryObservable.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FirestoreQueryObservable.swiftdeps"
+  }
+}

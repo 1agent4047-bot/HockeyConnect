@@ -1,0 +1,4 @@
+module leveldb {
+umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include"
+export *
+}

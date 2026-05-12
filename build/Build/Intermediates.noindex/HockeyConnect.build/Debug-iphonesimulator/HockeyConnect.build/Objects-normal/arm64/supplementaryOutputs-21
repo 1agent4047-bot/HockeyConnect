@@ -1,0 +1,30 @@
+{
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Models/Game.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/Game.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/Game.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/Game.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/Game.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/Game.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Views/Player/GameDetailView.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GameDetailView.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GameDetailView.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GameDetailView.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GameDetailView.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GameDetailView.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Views/Player/GamesFeedView.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GamesFeedView.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GamesFeedView.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GamesFeedView.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GamesFeedView.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GamesFeedView.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Views/Shared/GlassCard.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GlassCard.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GlassCard.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GlassCard.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GlassCard.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GlassCard.swiftdeps"
+  }
+}

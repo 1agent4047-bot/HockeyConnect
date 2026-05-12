@@ -1,0 +1,4 @@
+module FirebaseInstallations {
+umbrella header "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FirebaseInstallations.h"
+export *
+}

@@ -1,0 +1,23 @@
+{
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Views/Group/PostGameView.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PostGameView.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PostGameView.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PostGameView.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PostGameView.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PostGameView.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Views/Onboarding/PlayerSetupView.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerSetupView.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerSetupView.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerSetupView.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerSetupView.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerSetupView.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Views/Player/PlayerTabView.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerTabView.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerTabView.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerTabView.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerTabView.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/PlayerTabView.swiftdeps"
+  }
+}

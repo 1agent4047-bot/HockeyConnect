@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/db/dumpfile.cc \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/dumpfile.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/env.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/export.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/status.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/slice.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/db/dbformat.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/comparator.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/db.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/iterator.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/options.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/filter_policy.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/table_builder.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/util/coding.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/port/port.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/port/port_stdcxx.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/port/thread_annotations.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/util/logging.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/db/filename.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/db/log_reader.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/db/log_format.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/db/version_edit.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/db/write_batch_internal.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/write_batch.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/leveldb/include/leveldb/table.h

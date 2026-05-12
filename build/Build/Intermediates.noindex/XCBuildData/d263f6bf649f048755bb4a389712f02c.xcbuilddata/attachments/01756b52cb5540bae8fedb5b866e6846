@@ -1,0 +1,4 @@
+module opensslWrapper {
+umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/grpc-binary/openssl-grpc-Wrapper/include"
+export *
+}

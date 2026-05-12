@@ -1,0 +1,23 @@
+{
+  "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/Codable/ExplicitNull.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/ExplicitNull.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/Codable/FieldValue+Encodable.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/FieldValue+Encodable.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/Codable/GeoPoint+Codable.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.swiftdeps"
+  }
+}

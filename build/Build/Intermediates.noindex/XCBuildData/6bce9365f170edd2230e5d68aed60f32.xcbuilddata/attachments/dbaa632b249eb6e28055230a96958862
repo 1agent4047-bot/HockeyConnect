@@ -1,0 +1,4 @@
+module nanopb {
+umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/nanopb/spm_headers"
+export *
+}

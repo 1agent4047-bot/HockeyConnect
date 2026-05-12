@@ -1,0 +1,4 @@
+module AppAuth {
+umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/AppAuth-iOS/Sources/AppAuth"
+export *
+}

@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingTokenManager.m \
+  /Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseMessaging.build/DerivedSources/resource_bundle_accessor.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingTokenManager.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Public/FirebaseMessaging/FIRMessaging.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseInstallations/Source/Library/Private/FirebaseInstallationsInternal.h \
+  /Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/FirebaseInstallations.modulemap \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/FIRMessagingConstants.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/FIRMessagingDefines.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/FIRMessagingLogger.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/FIRMessagingCode.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/NSError+FIRMessaging.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingAuthKeychain.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingAuthService.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingCheckinService.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/FIRMessagingUtilities.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingCheckinPreferences.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingCheckinStore.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingTokenDeleteOperation.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingTokenOperation.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingTokenFetchOperation.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingTokenInfo.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingAPNSInfo.h \
+  /Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMessaging/Sources/Token/FIRMessagingTokenStore.h

@@ -1,0 +1,23 @@
+{
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Models/GroupProfile.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupProfile.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupProfile.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupProfile.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupProfile.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupProfile.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/ViewModels/GroupDashboardViewModel.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardViewModel.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardViewModel.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardViewModel.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardViewModel.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardViewModel.swiftdeps"
+  },
+  "/Users/hockey-app-project/HockeyConnect/HockeyConnect/Views/Group/GroupDashboardView.swift" : {
+    "const-values" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardView.swiftconstvalues",
+    "dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardView.d",
+    "diagnostics" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardView.dia",
+    "object" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardView.o",
+    "swift-dependencies" : "/Users/hockey-app-project/HockeyConnect/build/Build/Intermediates.noindex/HockeyConnect.build/Debug-iphonesimulator/HockeyConnect.build/Objects-normal/arm64/GroupDashboardView.swiftdeps"
+  }
+}
