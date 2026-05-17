@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>820483841604-53tfbpubatcjug1fqb5dvb1mt3v0gqcj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.820483841604-53tfbpubatcjug1fqb5dvb1mt3v0gqcj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCIzVzW20-_hKOaoj1xHppWrnecyRUjHXo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>820483841604</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hockeyconnect.app</string>
+	<key>PROJECT_ID</key>
+	<string>hockeyconnect-cc53e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hockeyconnect-cc53e.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:820483841604:ios:cb7b89963f0020d5102611</string>
+</dict>
+</plist>

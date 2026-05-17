@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07CF1B245722471260ABDF8F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276ACCBB420657C5CF9CF9D /* SplashView.swift */; };
+		0800137B641E831F40112C6E /* HockeyConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A964C2BDF31DACA9BC0F16 /* HockeyConnectApp.swift */; };
+		159F5F29CE561DD138709F2A /* PlayerProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE08B0E47D3D4E3741BD793 /* PlayerProfileView.swift */; };
+		19C5994CEDD887BE9CDB968D /* GroupSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41BCEB94BFF9414052E2504 /* GroupSetupView.swift */; };
+		1A07B89039E2F7E74D65DB6C /* SignInOrUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E5AC18145028B612194B9B /* SignInOrUpView.swift */; };
+		1A81C1A948274C47301AE492 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE550B58D9C56A556F20DFA /* GlassCard.swift */; };
+		20BC3424DECC13930CF998BA /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818001BF6ABA9CC608E986F0 /* FirestoreService.swift */; };
+		21B03DC180EDA70A65D844D9 /* PaymentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85722C9454037AB6EECE729F /* PaymentRecord.swift */; };
+		2AED01B650331993F76AF872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA7730CF14771D18D85583 /* AppDelegate.swift */; };
+		2E2B49A744E47A547FE4AA86 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC84BDDEA3AFB1D6BF9D5563 /* AuthView.swift */; };
+		437BE32D92C204703848285A /* OnboardingRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4488DA5872A0A403F65409B /* OnboardingRootView.swift */; };
+		4E64BF6074B0F897979266E1 /* PlayerFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A746899A5B792E2F9DA58D /* PlayerFeedViewModel.swift */; };
+		4FCEB45D1934B27BBD87098E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 63677BE5FCBF331D13863886 /* FirebaseMessaging */; };
+		514FA03D186302C9D75592C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5917AD18DE25672A9F475F63 /* GoogleService-Info.plist */; };
+		3357B2E40C688FDFDBC14943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035AE04AD005754D3A2494CE /* Assets.xcassets */; };
+		552B1EAF4471242BD3661675 /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5E86E19E24E147549E84A /* GroupDashboardView.swift */; };
+		63F83CBCD0FEA999B5B26473 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847E1E13A0DF4096A2258CB /* AuthService.swift */; };
+		707673D5FE0748200F009825 /* AvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A22D465169D22596D71F95 /* AvailabilityView.swift */; };
+		7553F5C1BD51C64D03C1A9D4 /* PlayerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2856BBB2FD2D5F98488C8D /* PlayerSetupView.swift */; };
+		76FCC4CAD81FB465666A2B0E /* SkillBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A9C4711B22A0A66478EDD /* SkillBadge.swift */; };
+		7FEAA4A5CBFBA23AE022D1FC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B3B909C8BA6C74E65D89C922 /* FirebaseFirestore */; };
+		870E427B6C00F4003E15BA12 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76807F96E66276B3957E51FE /* LandingView.swift */; };
+		8738AB3766CBEF7995AE2948 /* PlayerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E33AB0AE2B6E0A2328AA4C /* PlayerTabView.swift */; };
+		88D5265131C82469D40CC9B1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD04ADBEB2D070B2E52241 /* NotificationService.swift */; };
+		89A20FAFB79CFB0B820C6E25 /* PlayerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71356FCE2A5EB524065338F /* PlayerProfile.swift */; };
+		9C6C1A7CAC44922FE4F70971 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E22858F69BF667E7B34D0 /* Game.swift */; };
+		A05E94A92F99699CF4ECB16E /* PostGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5081710B36005DD0E7089D30 /* PostGameView.swift */; };
+		A075EBD0687EB9461D294DD1 /* GroupProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C73FCE6E3749148823D4C8 /* GroupProfile.swift */; };
+		A24BD95388AF8D7176B4B91F /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D68CA8D8950BDF246E9A3 /* AppUser.swift */; };
+		BB0554FAB6482D13D845420C /* ApplicantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB93D3D53B2497CDF918D5 /* ApplicantsView.swift */; };
+		CBBB1BD061D6EFBD11B03E7A /* HockeyConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414241D7597E8D913D2A53C1 /* HockeyConnectTests.swift */; };
+		D14D257D9FD2F476844FEB33 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 18FFFB4E534E6EB928061319 /* FirebaseAuth */; };
+		D230CE6A12D1874D52C82B0F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FD991A65302D99361ED0C6E0 /* GoogleSignIn */; };
+		D2C965C75D400BD600F09394 /* GamesFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6DFD39EC564F67FE4B8DF0 /* GamesFeedView.swift */; };
+		D3F69A9399F9183765FB393D /* GroupTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E5C7749EFE97771FF19F5 /* GroupTabView.swift */; };
+		D72E6FA4FBB4DAE53440953A /* GroupProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8856836BE4B3941428BDA /* GroupProfileView.swift */; };
+		DE6C4800DCD4B1FC0E06ED02 /* GroupDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC9C84156DFB5B4B1F0C14 /* GroupDashboardViewModel.swift */; };
+		EDA667001E15489F488BE3DA /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C87BA28E1D09FC7C5216E /* PaymentService.swift */; };
+		F397950E947DF33DF77C330E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139834AE067DEC101A719FD7 /* AuthViewModel.swift */; };
+		F3A7EBC7909F8940BA0CA5D8 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083928DD42682B031849D6AC /* GameDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B364D020AC2AAE49B264085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7989570F9F0892FB3E32EBB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F6195FE995EE7372175704;
+			remoteInfo = HockeyConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083928DD42682B031849D6AC /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		0B6DFD39EC564F67FE4B8DF0 /* GamesFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesFeedView.swift; sourceTree = "<group>"; };
+		139834AE067DEC101A719FD7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		17AA7730CF14771D18D85583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B5E5C7749EFE97771FF19F5 /* GroupTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTabView.swift; sourceTree = "<group>"; };
+		2528F728B38E0F4B3DB7F04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2A7D68CA8D8950BDF246E9A3 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		30202C87DFDCFAF0EACAA13E /* HockeyConnect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HockeyConnect.entitlements; sourceTree = "<group>"; };
+		329E22858F69BF667E7B34D0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3AAC9C84156DFB5B4B1F0C14 /* GroupDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDashboardViewModel.swift; sourceTree = "<group>"; };
+		3BE550B58D9C56A556F20DFA /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		414241D7597E8D913D2A53C1 /* HockeyConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyConnectTests.swift; sourceTree = "<group>"; };
+		4AE8856836BE4B3941428BDA /* GroupProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupProfileView.swift; sourceTree = "<group>"; };
+		5081710B36005DD0E7089D30 /* PostGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGameView.swift; sourceTree = "<group>"; };
+		5917AD18DE25672A9F475F63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		035AE04AD005754D3A2494CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D2856BBB2FD2D5F98488C8D /* PlayerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupView.swift; sourceTree = "<group>"; };
+		65E5AC18145028B612194B9B /* SignInOrUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOrUpView.swift; sourceTree = "<group>"; };
+		66CD04ADBEB2D070B2E52241 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		72A746899A5B792E2F9DA58D /* PlayerFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFeedViewModel.swift; sourceTree = "<group>"; };
+		76807F96E66276B3957E51FE /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		818001BF6ABA9CC608E986F0 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		8276ACCBB420657C5CF9CF9D /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		85722C9454037AB6EECE729F /* PaymentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRecord.swift; sourceTree = "<group>"; };
+		87C73FCE6E3749148823D4C8 /* GroupProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupProfile.swift; sourceTree = "<group>"; };
+		894C87BA28E1D09FC7C5216E /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		98E33AB0AE2B6E0A2328AA4C /* PlayerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTabView.swift; sourceTree = "<group>"; };
+		A41BCEB94BFF9414052E2504 /* GroupSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSetupView.swift; sourceTree = "<group>"; };
+		B019700F3774A6E2B736DCEF /* HockeyConnect.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HockeyConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9215C461BE0B46041128E4 /* HockeyConnectTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HockeyConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBB93D3D53B2497CDF918D5 /* ApplicantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsView.swift; sourceTree = "<group>"; };
+		E4488DA5872A0A403F65409B /* OnboardingRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRootView.swift; sourceTree = "<group>"; };
+		EAD5E86E19E24E147549E84A /* GroupDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDashboardView.swift; sourceTree = "<group>"; };
+		EC84BDDEA3AFB1D6BF9D5563 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		F1A964C2BDF31DACA9BC0F16 /* HockeyConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyConnectApp.swift; sourceTree = "<group>"; };
+		F3A22D465169D22596D71F95 /* AvailabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityView.swift; sourceTree = "<group>"; };
+		F71356FCE2A5EB524065338F /* PlayerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfile.swift; sourceTree = "<group>"; };
+		F847E1E13A0DF4096A2258CB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FA6A9C4711B22A0A66478EDD /* SkillBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillBadge.swift; sourceTree = "<group>"; };
+		FBE08B0E47D3D4E3741BD793 /* PlayerProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B460A9A679E20190FC3C0972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14D257D9FD2F476844FEB33 /* FirebaseAuth in Frameworks */,
+				7FEAA4A5CBFBA23AE022D1FC /* FirebaseFirestore in Frameworks */,
+				4FCEB45D1934B27BBD87098E /* FirebaseMessaging in Frameworks */,
+				D230CE6A12D1874D52C82B0F /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D2B2FB0F37BDCE7FFD5EF3 = {
+			isa = PBXGroup;
+			children = (
+				59E74239CD7993C4ABA1EBF0 /* HockeyConnect */,
+				446BDB8F4AB95A4370B4C2CB /* HockeyConnectTests */,
+				2C6E928F5AB81B465C977D71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C6E928F5AB81B465C977D71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B019700F3774A6E2B736DCEF /* HockeyConnect.app */,
+				CB9215C461BE0B46041128E4 /* HockeyConnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		420462E68AACC711580910E6 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F3A22D465169D22596D71F95 /* AvailabilityView.swift */,
+				083928DD42682B031849D6AC /* GameDetailView.swift */,
+				0B6DFD39EC564F67FE4B8DF0 /* GamesFeedView.swift */,
+				FBE08B0E47D3D4E3741BD793 /* PlayerProfileView.swift */,
+				98E33AB0AE2B6E0A2328AA4C /* PlayerTabView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		446BDB8F4AB95A4370B4C2CB /* HockeyConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				414241D7597E8D913D2A53C1 /* HockeyConnectTests.swift */,
+			);
+			path = HockeyConnectTests;
+			sourceTree = "<group>";
+		};
+		506D47F8F032C712332A47B6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				139834AE067DEC101A719FD7 /* AuthViewModel.swift */,
+				3AAC9C84156DFB5B4B1F0C14 /* GroupDashboardViewModel.swift */,
+				72A746899A5B792E2F9DA58D /* PlayerFeedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		59E74239CD7993C4ABA1EBF0 /* HockeyConnect */ = {
+			isa = PBXGroup;
+			children = (
+				17AA7730CF14771D18D85583 /* AppDelegate.swift */,
+				035AE04AD005754D3A2494CE /* Assets.xcassets */,
+				5917AD18DE25672A9F475F63 /* GoogleService-Info.plist */,
+				30202C87DFDCFAF0EACAA13E /* HockeyConnect.entitlements */,
+				F1A964C2BDF31DACA9BC0F16 /* HockeyConnectApp.swift */,
+				2528F728B38E0F4B3DB7F04E /* Info.plist */,
+				9CAD12D1544FE87790FF05E6 /* Models */,
+				A09E0249C4140DE9C9816E05 /* Services */,
+				506D47F8F032C712332A47B6 /* ViewModels */,
+				A274797264A699555249D60B /* Views */,
+			);
+			path = HockeyConnect;
+			sourceTree = "<group>";
+		};
+		9CAD12D1544FE87790FF05E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A7D68CA8D8950BDF246E9A3 /* AppUser.swift */,
+				329E22858F69BF667E7B34D0 /* Game.swift */,
+				87C73FCE6E3749148823D4C8 /* GroupProfile.swift */,
+				85722C9454037AB6EECE729F /* PaymentRecord.swift */,
+				F71356FCE2A5EB524065338F /* PlayerProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A09E0249C4140DE9C9816E05 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F847E1E13A0DF4096A2258CB /* AuthService.swift */,
+				818001BF6ABA9CC608E986F0 /* FirestoreService.swift */,
+				66CD04ADBEB2D070B2E52241 /* NotificationService.swift */,
+				894C87BA28E1D09FC7C5216E /* PaymentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A274797264A699555249D60B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5C930C56EED5A35F58CE50A /* Group */,
+				E17582E7B630B0410059B3CA /* Onboarding */,
+				420462E68AACC711580910E6 /* Player */,
+				FAC3ACC57E19EA45CFADAC6D /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5C930C56EED5A35F58CE50A /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				DFBB93D3D53B2497CDF918D5 /* ApplicantsView.swift */,
+				EAD5E86E19E24E147549E84A /* GroupDashboardView.swift */,
+				4AE8856836BE4B3941428BDA /* GroupProfileView.swift */,
+				1B5E5C7749EFE97771FF19F5 /* GroupTabView.swift */,
+				5081710B36005DD0E7089D30 /* PostGameView.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		E17582E7B630B0410059B3CA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EC84BDDEA3AFB1D6BF9D5563 /* AuthView.swift */,
+				A41BCEB94BFF9414052E2504 /* GroupSetupView.swift */,
+				76807F96E66276B3957E51FE /* LandingView.swift */,
+				E4488DA5872A0A403F65409B /* OnboardingRootView.swift */,
+				5D2856BBB2FD2D5F98488C8D /* PlayerSetupView.swift */,
+				65E5AC18145028B612194B9B /* SignInOrUpView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FAC3ACC57E19EA45CFADAC6D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3BE550B58D9C56A556F20DFA /* GlassCard.swift */,
+				FA6A9C4711B22A0A66478EDD /* SkillBadge.swift */,
+				8276ACCBB420657C5CF9CF9D /* SplashView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21F6195FE995EE7372175704 /* HockeyConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632E5792D1BE3F59371FAB2B /* Build configuration list for PBXNativeTarget "HockeyConnect" */;
+			buildPhases = (
+				B5A43B8856772DCA3E7958A0 /* Sources */,
+				A5CDBE780A72E8F5030131F7 /* Resources */,
+				B460A9A679E20190FC3C0972 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HockeyConnect;
+			packageProductDependencies = (
+				18FFFB4E534E6EB928061319 /* FirebaseAuth */,
+				B3B909C8BA6C74E65D89C922 /* FirebaseFirestore */,
+				63677BE5FCBF331D13863886 /* FirebaseMessaging */,
+				FD991A65302D99361ED0C6E0 /* GoogleSignIn */,
+			);
+			productName = HockeyConnect;
+			productReference = B019700F3774A6E2B736DCEF /* HockeyConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7B755ED19AD362B58590810 /* HockeyConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502A4E8ED75EA7251AA21CFE /* Build configuration list for PBXNativeTarget "HockeyConnectTests" */;
+			buildPhases = (
+				EE857D5793F97E9EA14DA7E2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A745352F6247E01E2B954DFC /* PBXTargetDependency */,
+			);
+			name = HockeyConnectTests;
+			productName = HockeyConnectTests;
+			productReference = CB9215C461BE0B46041128E4 /* HockeyConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7989570F9F0892FB3E32EBB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = A9029355CD87FC9F8EE5B426 /* Build configuration list for PBXProject "HockeyConnect" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 19D2B2FB0F37BDCE7FFD5EF3;
+			packageReferences = (
+				039B88C06ED8B36594420D89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4B5710B3FA843DC67B3D90A6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21F6195FE995EE7372175704 /* HockeyConnect */,
+				B7B755ED19AD362B58590810 /* HockeyConnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5CDBE780A72E8F5030131F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514FA03D186302C9D75592C9 /* GoogleService-Info.plist in Resources */,
+				3357B2E40C688FDFDBC14943 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A43B8856772DCA3E7958A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AED01B650331993F76AF872 /* AppDelegate.swift in Sources */,
+				A24BD95388AF8D7176B4B91F /* AppUser.swift in Sources */,
+				BB0554FAB6482D13D845420C /* ApplicantsView.swift in Sources */,
+				63F83CBCD0FEA999B5B26473 /* AuthService.swift in Sources */,
+				2E2B49A744E47A547FE4AA86 /* AuthView.swift in Sources */,
+				F397950E947DF33DF77C330E /* AuthViewModel.swift in Sources */,
+				707673D5FE0748200F009825 /* AvailabilityView.swift in Sources */,
+				20BC3424DECC13930CF998BA /* FirestoreService.swift in Sources */,
+				9C6C1A7CAC44922FE4F70971 /* Game.swift in Sources */,
+				F3A7EBC7909F8940BA0CA5D8 /* GameDetailView.swift in Sources */,
+				D2C965C75D400BD600F09394 /* GamesFeedView.swift in Sources */,
+				1A81C1A948274C47301AE492 /* GlassCard.swift in Sources */,
+				552B1EAF4471242BD3661675 /* GroupDashboardView.swift in Sources */,
+				DE6C4800DCD4B1FC0E06ED02 /* GroupDashboardViewModel.swift in Sources */,
+				A075EBD0687EB9461D294DD1 /* GroupProfile.swift in Sources */,
+				D72E6FA4FBB4DAE53440953A /* GroupProfileView.swift in Sources */,
+				19C5994CEDD887BE9CDB968D /* GroupSetupView.swift in Sources */,
+				D3F69A9399F9183765FB393D /* GroupTabView.swift in Sources */,
+				0800137B641E831F40112C6E /* HockeyConnectApp.swift in Sources */,
+				870E427B6C00F4003E15BA12 /* LandingView.swift in Sources */,
+				88D5265131C82469D40CC9B1 /* NotificationService.swift in Sources */,
+				437BE32D92C204703848285A /* OnboardingRootView.swift in Sources */,
+				21B03DC180EDA70A65D844D9 /* PaymentRecord.swift in Sources */,
+				EDA667001E15489F488BE3DA /* PaymentService.swift in Sources */,
+				4E64BF6074B0F897979266E1 /* PlayerFeedViewModel.swift in Sources */,
+				89A20FAFB79CFB0B820C6E25 /* PlayerProfile.swift in Sources */,
+				159F5F29CE561DD138709F2A /* PlayerProfileView.swift in Sources */,
+				7553F5C1BD51C64D03C1A9D4 /* PlayerSetupView.swift in Sources */,
+				8738AB3766CBEF7995AE2948 /* PlayerTabView.swift in Sources */,
+				A05E94A92F99699CF4ECB16E /* PostGameView.swift in Sources */,
+				1A07B89039E2F7E74D65DB6C /* SignInOrUpView.swift in Sources */,
+				76FCC4CAD81FB465666A2B0E /* SkillBadge.swift in Sources */,
+				07CF1B245722471260ABDF8F /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE857D5793F97E9EA14DA7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBB1BD061D6EFBD11B03E7A /* HockeyConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A745352F6247E01E2B954DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F6195FE995EE7372175704 /* HockeyConnect */;
+			targetProxy = 4B364D020AC2AAE49B264085 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CC293D372C0F3A4B4D6445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HockeyConnect/HockeyConnect.entitlements;
+				INFOPLIST_FILE = HockeyConnect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hockeyconnect.app;
+				PRODUCT_NAME = HockeyConnect;
+			};
+			name = Release;
+		};
+		0A862F873CB0FC91E6B92F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.hockeyconnect.HockeyConnectTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HockeyConnect.app/HockeyConnect";
+			};
+			name = Debug;
+		};
+		6C38CB2EA8DC002CB9E208DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		876D169C6282776B2C2500B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.hockeyconnect.HockeyConnectTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HockeyConnect.app/HockeyConnect";
+			};
+			name = Release;
+		};
+		BAAF48780970C456808EE0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HockeyConnect/HockeyConnect.entitlements;
+				INFOPLIST_FILE = HockeyConnect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hockeyconnect.app;
+				PRODUCT_NAME = HockeyConnect;
+			};
+			name = Debug;
+		};
+		E78220358052C6D442BB3EB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		502A4E8ED75EA7251AA21CFE /* Build configuration list for PBXNativeTarget "HockeyConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A862F873CB0FC91E6B92F57 /* Debug */,
+				876D169C6282776B2C2500B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		632E5792D1BE3F59371FAB2B /* Build configuration list for PBXNativeTarget "HockeyConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAF48780970C456808EE0B4 /* Debug */,
+				03CC293D372C0F3A4B4D6445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A9029355CD87FC9F8EE5B426 /* Build configuration list for PBXProject "HockeyConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C38CB2EA8DC002CB9E208DB /* Debug */,
+				E78220358052C6D442BB3EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		039B88C06ED8B36594420D89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		4B5710B3FA843DC67B3D90A6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18FFFB4E534E6EB928061319 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 039B88C06ED8B36594420D89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		63677BE5FCBF331D13863886 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 039B88C06ED8B36594420D89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		B3B909C8BA6C74E65D89C922 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 039B88C06ED8B36594420D89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FD991A65302D99361ED0C6E0 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B5710B3FA843DC67B3D90A6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7989570F9F0892FB3E32EBB3 /* Project object */;
+}
