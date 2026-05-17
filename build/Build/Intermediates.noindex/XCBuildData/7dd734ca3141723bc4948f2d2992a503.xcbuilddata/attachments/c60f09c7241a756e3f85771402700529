@@ -1,4 +1,0 @@
-module AppCheckCore {
-umbrella header "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/app-check/AppCheckCore/Sources/Public/AppCheckCore/AppCheckCore.h"
-export *
-}

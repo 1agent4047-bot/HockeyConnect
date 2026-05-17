@@ -1,4 +1,0 @@
-module FirebaseFirestoreTarget {
-umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/SwiftPM-PlatformExclude/FirebaseFirestoreWrap/include"
-export *
-}

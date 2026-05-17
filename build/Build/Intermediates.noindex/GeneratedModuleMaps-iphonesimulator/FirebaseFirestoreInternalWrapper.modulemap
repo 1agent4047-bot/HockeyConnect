@@ -1,4 +1,0 @@
-module FirebaseFirestoreInternalWrapper {
-umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFirestoreInternal"
-export *
-}

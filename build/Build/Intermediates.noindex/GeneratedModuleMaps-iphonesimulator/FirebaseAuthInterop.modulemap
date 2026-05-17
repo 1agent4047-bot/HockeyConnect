@@ -1,4 +1,0 @@
-module FirebaseAuthInterop {
-umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Interop/Public"
-export *
-}

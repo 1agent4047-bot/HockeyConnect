@@ -1,4 +1,0 @@
-module abslWrapper {
-umbrella "/Users/hockey-app-project/HockeyConnect/build/SourcePackages/checkouts/abseil-cpp-binary/absl-Wrapper/include"
-export *
-}
