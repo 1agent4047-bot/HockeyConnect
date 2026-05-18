@@ -1,9 +1,32 @@
 import Foundation
+import UIKit
 import FirebaseAuth
 import FirebaseCore
 import GoogleSignIn
 import AuthenticationServices
 import CryptoKit
+
+// MARK: - PhoneAuthUIDelegateAdapter
+//
+// Firebase's reCAPTCHA fallback (used when APNs silent-push verification is
+// unavailable) needs an AuthUIDelegate to present/dismiss a SFSafariViewController.
+// UIViewController already has present/dismiss, but Swift doesn't automatically
+// declare conformance to the @objc FIRAuthUIDelegate protocol. This thin wrapper
+// bridges that gap.
+private final class PhoneAuthUIDelegateAdapter: NSObject, AuthUIDelegate {
+    private let vc: UIViewController
+    init(_ vc: UIViewController) { self.vc = vc }
+
+    func present(_ viewControllerToPresent: UIViewController,
+                 animated flag: Bool,
+                 completion: (() -> Void)?) {
+        vc.present(viewControllerToPresent, animated: flag, completion: completion)
+    }
+
+    func dismiss(animated flag: Bool, completion: (() -> Void)?) {
+        vc.dismiss(animated: flag, completion: completion)
+    }
+}
 
 @MainActor
 final class AuthService: ObservableObject {
@@ -174,10 +197,19 @@ final class AuthService: ObservableObject {
     /// Triggers Firebase to SMS a 6-digit code to `phone` (E.164 format
     /// recommended, e.g. "+16025551234"). Throws on rate limit, invalid
     /// number, missing APNs config, etc.
-    func sendPhoneVerificationSMS(to phone: String) async throws {
+    ///
+    /// `presenter` is a UIViewController Firebase can use to show the reCAPTCHA
+    /// fallback web-view when APNs silent-push verification is unavailable
+    /// (e.g. APNs auth key not yet uploaded to Firebase Console, user denied
+    /// notifications, or first launch before the APNs token is delivered).
+    /// Without this, Firebase has no fallback and the call silently fails.
+    func sendPhoneVerificationSMS(to phone: String, presenter: UIViewController? = nil) async throws {
         try requireFirebase()
+        // Wrap the presenter in an AuthUIDelegate adapter so Firebase can show the
+        // reCAPTCHA web-view if APNs silent-push verification is unavailable.
+        let delegate: (any AuthUIDelegate)? = presenter.map { PhoneAuthUIDelegateAdapter($0) }
         let id = try await PhoneAuthProvider.provider()
-            .verifyPhoneNumber(phone, uiDelegate: nil)
+            .verifyPhoneNumber(phone, uiDelegate: delegate)
         phoneVerificationID = id
     }
 

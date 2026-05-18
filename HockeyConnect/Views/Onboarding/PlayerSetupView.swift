@@ -495,12 +495,24 @@ struct PhoneVerifyStep: View {
 
     /// Asks Firebase to send a real SMS code to `phone`. Firebase normalises
     /// the number on the server (E.164 recommended).
+    ///
+    /// We capture the root UIViewController here (on the main thread, before
+    /// entering the async Task) so Firebase can show the reCAPTCHA web-view
+    /// fallback if APNs silent-push verification is unavailable.  Without this
+    /// presenter, Firebase has no fallback and the call fails silently.
     private func sendCode() {
         isSending = true
         codeError = nil
+        // Capture the root VC now — we're on the main thread inside a button action.
+        let presenter = UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .first?.windows.first?.rootViewController
         Task {
             do {
-                try await AuthService.shared.sendPhoneVerificationSMS(to: e164(phone))
+                try await AuthService.shared.sendPhoneVerificationSMS(
+                    to: e164(phone),
+                    presenter: presenter
+                )
                 await MainActor.run {
                     codeSent = true
                     enteredCode = ""

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,11 +17,11 @@
 		21B03DC180EDA70A65D844D9 /* PaymentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85722C9454037AB6EECE729F /* PaymentRecord.swift */; };
 		2AED01B650331993F76AF872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA7730CF14771D18D85583 /* AppDelegate.swift */; };
 		2E2B49A744E47A547FE4AA86 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC84BDDEA3AFB1D6BF9D5563 /* AuthView.swift */; };
+		3357B2E40C688FDFDBC14943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035AE04AD005754D3A2494CE /* Assets.xcassets */; };
 		437BE32D92C204703848285A /* OnboardingRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4488DA5872A0A403F65409B /* OnboardingRootView.swift */; };
 		4E64BF6074B0F897979266E1 /* PlayerFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A746899A5B792E2F9DA58D /* PlayerFeedViewModel.swift */; };
 		4FCEB45D1934B27BBD87098E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 63677BE5FCBF331D13863886 /* FirebaseMessaging */; };
 		514FA03D186302C9D75592C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5917AD18DE25672A9F475F63 /* GoogleService-Info.plist */; };
-		3357B2E40C688FDFDBC14943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035AE04AD005754D3A2494CE /* Assets.xcassets */; };
 		552B1EAF4471242BD3661675 /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5E86E19E24E147549E84A /* GroupDashboardView.swift */; };
 		63F83CBCD0FEA999B5B26473 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847E1E13A0DF4096A2258CB /* AuthService.swift */; };
 		707673D5FE0748200F009825 /* AvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A22D465169D22596D71F95 /* AvailabilityView.swift */; };
@@ -60,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035AE04AD005754D3A2494CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		083928DD42682B031849D6AC /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		0B6DFD39EC564F67FE4B8DF0 /* GamesFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesFeedView.swift; sourceTree = "<group>"; };
 		139834AE067DEC101A719FD7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		4AE8856836BE4B3941428BDA /* GroupProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupProfileView.swift; sourceTree = "<group>"; };
 		5081710B36005DD0E7089D30 /* PostGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGameView.swift; sourceTree = "<group>"; };
 		5917AD18DE25672A9F475F63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		035AE04AD005754D3A2494CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D2856BBB2FD2D5F98488C8D /* PlayerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupView.swift; sourceTree = "<group>"; };
 		65E5AC18145028B612194B9B /* SignInOrUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOrUpView.swift; sourceTree = "<group>"; };
 		66CD04ADBEB2D070B2E52241 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 		894C87BA28E1D09FC7C5216E /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
 		98E33AB0AE2B6E0A2328AA4C /* PlayerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTabView.swift; sourceTree = "<group>"; };
 		A41BCEB94BFF9414052E2504 /* GroupSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSetupView.swift; sourceTree = "<group>"; };
-		B019700F3774A6E2B736DCEF /* HockeyConnect.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HockeyConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB9215C461BE0B46041128E4 /* HockeyConnectTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HockeyConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B019700F3774A6E2B736DCEF /* HockeyConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9215C461BE0B46041128E4 /* HockeyConnectTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = text; name = HockeyConnectTests.xctest; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBB93D3D53B2497CDF918D5 /* ApplicantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsView.swift; sourceTree = "<group>"; };
 		E4488DA5872A0A403F65409B /* OnboardingRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRootView.swift; sourceTree = "<group>"; };
 		EAD5E86E19E24E147549E84A /* GroupDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDashboardView.swift; sourceTree = "<group>"; };
@@ -301,8 +301,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = A9029355CD87FC9F8EE5B426 /* Build configuration list for PBXProject "HockeyConnect" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -403,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HockeyConnect/HockeyConnect.entitlements;
+				DEVELOPMENT_TEAM = 6H7T44D49P;
 				INFOPLIST_FILE = HockeyConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hockeyconnect.app;
@@ -422,7 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				SDKROOT = iphoneos;
@@ -443,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HockeyConnect/HockeyConnect.entitlements;
+				DEVELOPMENT_TEAM = 6H7T44D49P;
 				INFOPLIST_FILE = HockeyConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hockeyconnect.app;
@@ -454,7 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				SDKROOT = iphoneos;
