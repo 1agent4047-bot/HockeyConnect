@@ -15,12 +15,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             FirebaseApp.configure()
             Messaging.messaging().delegate = self
             UNUserNotificationCenter.current().delegate = self
-            // Ask for notification permission proactively so the APNs token
-            // registration kicks off — Firebase Phone Auth needs that token
-            // for silent-push verification on real devices.
-            UNUserNotificationCenter.current().requestAuthorization(
-                options: [.alert, .badge, .sound]
-            ) { _, _ in }
+            // Register for remote notifications immediately. This obtains the
+            // APNs *device token* that Firebase Phone Auth needs for silent-push
+            // verification — and crucially this does NOT require user-facing
+            // notification permission, so no prompt appears here. The actual
+            // user-facing "allow notifications?" prompt is requested later, with
+            // context, on the first onboarding screen (see LandingView).
             DispatchQueue.main.async {
                 application.registerForRemoteNotifications()
             }

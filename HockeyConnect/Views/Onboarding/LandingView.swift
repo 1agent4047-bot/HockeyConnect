@@ -3,6 +3,12 @@ import SwiftUI
 struct LandingView: View {
     let onContinue: () -> Void
 
+    // Show a contextual banner so the user understands WHY the iOS
+    // notification prompt is about to appear. The prompt itself is the system
+    // dialog triggered from .onAppear a beat after the banner is visible.
+    @State private var showNotifBanner = false
+    @AppStorage("didAskNotificationPermission") private var didAskNotif = false
+
     @State private var logoScale: CGFloat = 0.4
     @State private var logoOpacity: Double = 0
     @State private var titleOffset: CGFloat = 40
@@ -100,6 +106,50 @@ struct LandingView: View {
                 .opacity(ctaOpacity)
                 .offset(y: ctaOffset)
             }
+
+            // Contextual notification banner — pinned to the very top so it's
+            // on screen as the iOS permission dialog appears.
+            if showNotifBanner {
+                VStack {
+                    HStack(spacing: 10) {
+                        Image(systemName: "bell.badge.fill")
+                            .foregroundStyle(.white)
+                            .font(.subheadline)
+                        Text("Please tap Allow so we can tell you when there are games near you!")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(.white)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer(minLength: 0)
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    .background(
+                        LinearGradient(
+                            colors: [Color.iceBlue, Color(red: 0.13, green: 0.42, blue: 0.65)],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .shadow(color: .black.opacity(0.18), radius: 8, y: 3)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                    Spacer()
+                }
+                .transition(.move(edge: .top).combined(with: .opacity))
+                .zIndex(1)
+            }
+        }
+        .task {
+            // Ask once, with context. The banner shows first, then the system
+            // dialog appears on top of it so the user has the "why".
+            guard !didAskNotif else { return }
+            didAskNotif = true
+            withAnimation(.spring(response: 0.5)) { showNotifBanner = true }
+            try? await Task.sleep(nanoseconds: 900_000_000)
+            await NotificationService.shared.requestPermission()
+            try? await Task.sleep(nanoseconds: 4_000_000_000)
+            withAnimation(.easeOut(duration: 0.4)) { showNotifBanner = false }
         }
         .onAppear {
             withAnimation(.spring(response: 0.7, dampingFraction: 0.65).delay(0.1)) {

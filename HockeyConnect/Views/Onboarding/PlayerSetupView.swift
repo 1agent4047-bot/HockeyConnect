@@ -503,16 +503,11 @@ struct PhoneVerifyStep: View {
     private func sendCode() {
         isSending = true
         codeError = nil
-        // Capture the root VC now — we're on the main thread inside a button action.
-        let presenter = UIApplication.shared.connectedScenes
-            .compactMap { $0 as? UIWindowScene }
-            .first?.windows.first?.rootViewController
         Task {
             do {
-                try await AuthService.shared.sendPhoneVerificationSMS(
-                    to: e164(phone),
-                    presenter: presenter
-                )
+                // AuthService resolves the top-most view controller itself, so
+                // the reCAPTCHA fallback can always present.
+                try await AuthService.shared.sendPhoneVerificationSMS(to: e164(phone))
                 await MainActor.run {
                     codeSent = true
                     enteredCode = ""
@@ -546,18 +541,22 @@ struct PhoneVerifyStep: View {
         }
     }
 
-    /// Map Firebase Phone Auth errors to readable strings.
+    /// Map Firebase Phone Auth errors to readable strings. For unrecognised
+    /// errors we deliberately surface the raw domain/code/description so the
+    /// exact failure is visible on-device instead of being guessed at.
     private func friendlySMSError(_ error: Error) -> String {
         let ns = error as NSError
         if ns.domain == "FIRAuthErrorDomain" {
             switch ns.code {
-            case 17042: return "That phone number doesn't look valid."
-            case 17010: return "Too many attempts. Try again in a few minutes."
-            case 17052: return "SMS quota exceeded for this Firebase project today."
+            case 17042: return "That phone number doesn't look valid. Enter 10 digits (we add +1)."
+            case 17010: return "Too many attempts. Wait a few minutes and try again."
+            case 17052: return "SMS quota exceeded for today. Try again tomorrow."
+            case 17093: return "App verification failed (APNs/reCAPTCHA). Tap Send Code again."
+            case 17499: return "Phone sign-in isn't enabled for this app. (Firebase config)"
             default: break
             }
         }
-        return ns.localizedDescription
+        return "Couldn't send code — [\(ns.domain) \(ns.code)] \(ns.localizedDescription)"
     }
 }
 

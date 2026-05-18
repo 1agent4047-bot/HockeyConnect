@@ -205,12 +205,48 @@ final class AuthService: ObservableObject {
     /// Without this, Firebase has no fallback and the call silently fails.
     func sendPhoneVerificationSMS(to phone: String, presenter: UIViewController? = nil) async throws {
         try requireFirebase()
-        // Wrap the presenter in an AuthUIDelegate adapter so Firebase can show the
-        // reCAPTCHA web-view if APNs silent-push verification is unavailable.
-        let delegate: (any AuthUIDelegate)? = presenter.map { PhoneAuthUIDelegateAdapter($0) }
-        let id = try await PhoneAuthProvider.provider()
-            .verifyPhoneNumber(phone, uiDelegate: delegate)
-        phoneVerificationID = id
+        // Resolve the *top-most* view controller. The previous bug used only the
+        // window's rootViewController, which cannot present the reCAPTCHA web-view
+        // when a SwiftUI sheet / modal is already on screen — so the fallback flow
+        // silently failed and no SMS was ever sent. Walking the presentation chain
+        // (mirrors Firebase's own AuthDefaultUIDelegate) guarantees a presentable VC.
+        let resolved = presenter ?? Self.topMostViewController()
+        let delegate: (any AuthUIDelegate)? = resolved.map { PhoneAuthUIDelegateAdapter($0) }
+        do {
+            let id = try await PhoneAuthProvider.provider()
+                .verifyPhoneNumber(phone, uiDelegate: delegate)
+            phoneVerificationID = id
+            #if DEBUG
+            print("📱 [PhoneAuth] verifyPhoneNumber OK — verificationID set for \(phone)")
+            #endif
+        } catch {
+            let ns = error as NSError
+            #if DEBUG
+            print("❌ [PhoneAuth] verifyPhoneNumber FAILED — domain=\(ns.domain) code=\(ns.code) desc=\(ns.localizedDescription)")
+            #endif
+            throw error
+        }
+    }
+
+    /// Walks the presented-VC chain to find the controller actually on screen,
+    /// so Firebase's reCAPTCHA fallback can always present from a live VC.
+    static func topMostViewController() -> UIViewController? {
+        let scenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+        let keyWindow = scenes.flatMap { $0.windows }.first(where: { $0.isKeyWindow })
+            ?? scenes.first?.windows.first
+        var top = keyWindow?.rootViewController
+        while true {
+            if let presented = top?.presentedViewController {
+                top = presented
+            } else if let nav = top as? UINavigationController {
+                top = nav.visibleViewController ?? nav.topViewController
+            } else if let tab = top as? UITabBarController {
+                top = tab.selectedViewController ?? top
+            } else {
+                break
+            }
+        }
+        return top
     }
 
     /// Verifies the 6-digit code the user typed. If a Firebase user is
@@ -224,10 +260,31 @@ final class AuthService: ObservableObject {
         let credential = PhoneAuthProvider.provider()
             .credential(withVerificationID: id, verificationCode: code)
 
-        if let current = Auth.auth().currentUser {
-            _ = try await current.link(with: credential)
-        } else {
-            _ = try await Auth.auth().signIn(with: credential)
+        do {
+            if let current = Auth.auth().currentUser {
+                _ = try await current.link(with: credential)
+            } else {
+                _ = try await Auth.auth().signIn(with: credential)
+            }
+        } catch let nsError as NSError {
+            let codeEnum = AuthErrorCode(rawValue: nsError.code)
+            switch codeEnum {
+            case .providerAlreadyLinked:
+                // The code WAS correct — this account already has phone linked
+                // from a prior attempt. Treat as success.
+                break
+            case .credentialAlreadyInUse:
+                // Phone belongs to a *different* account. The code was still
+                // valid, so for our onboarding (where phone is just a contact
+                // field, not the primary identity) we let the user proceed.
+                break
+            case .invalidVerificationCode:
+                throw AuthError.invalidCredential
+            case .sessionExpired:
+                throw AuthError.verificationSent
+            default:
+                throw nsError
+            }
         }
         phoneVerificationID = nil
     }
