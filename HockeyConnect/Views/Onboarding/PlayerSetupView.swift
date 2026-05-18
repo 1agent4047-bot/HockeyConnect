@@ -258,6 +258,7 @@ private struct NameAgeStep: View {
 
     @State private var showMinorDisclaimer = false
     @State private var acknowledgedMinor = false
+    @State private var hasWarnedMinor = false
 
     private var isMinor: Bool { age >= 12 && age <= 17 }
     private var canContinue: Bool {
@@ -280,11 +281,14 @@ private struct NameAgeStep: View {
                                 .foregroundStyle(.secondary)
                             Stepper("\(age) years old", value: $age, in: 12...80)
                                 .foregroundStyle(.primary)
-                                .onChange(of: age) { _, newValue in
-                                    if newValue >= 12 && newValue <= 17 {
+                                .onChange(of: age) { oldValue, newValue in
+                                    if newValue <= 17 && oldValue >= 18 {
+                                        // Only warn once when crossing the adult→minor boundary
                                         showMinorDisclaimer = true
-                                    } else {
+                                        hasWarnedMinor = true
+                                    } else if newValue >= 18 {
                                         acknowledgedMinor = false
+                                        hasWarnedMinor = false
                                     }
                                 }
                         }
@@ -387,15 +391,29 @@ struct PhoneVerifyStep: View {
     private var enterPhoneCard: some View {
         VStack(spacing: 20) {
             GlassCard {
-                FormField(
-                    label: "Phone Number",
-                    text: $phone,
-                    placeholder: "+1 (480) 555-0100",
-                    keyboard: .phonePad
-                )
+                VStack(spacing: 8) {
+                    FormField(
+                        label: "Phone Number",
+                        text: $phone,
+                        placeholder: "+1 (480) 555-0100",
+                        keyboard: .phonePad
+                    )
+                    Text("US numbers: enter 10 digits — we'll add +1 automatically.")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
                 .padding(24)
             }
             .padding(.horizontal, 24)
+
+            if let err = codeError {
+                Text(err)
+                    .font(.caption)
+                    .foregroundStyle(.red)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 24)
+            }
 
             PrimaryButton(
                 title: isSending ? "Sending…" : "Send Code",
@@ -465,6 +483,16 @@ struct PhoneVerifyStep: View {
         }
     }
 
+    /// Normalise a raw phone string to E.164 before handing to Firebase.
+    /// Firebase is strict: "+16025551234" works, "6025551234" often fails.
+    private func e164(_ raw: String) -> String {
+        let digits = raw.filter(\.isNumber)
+        if raw.hasPrefix("+") { return raw }                        // already has country code
+        if digits.count == 10 { return "+1\(digits)" }             // bare US 10-digit
+        if digits.count == 11 && digits.hasPrefix("1") { return "+\(digits)" } // 11-digit with leading 1
+        return "+\(digits)"                                         // best-effort for other countries
+    }
+
     /// Asks Firebase to send a real SMS code to `phone`. Firebase normalises
     /// the number on the server (E.164 recommended).
     private func sendCode() {
@@ -472,7 +500,7 @@ struct PhoneVerifyStep: View {
         codeError = nil
         Task {
             do {
-                try await AuthService.shared.sendPhoneVerificationSMS(to: phone)
+                try await AuthService.shared.sendPhoneVerificationSMS(to: e164(phone))
                 await MainActor.run {
                     codeSent = true
                     enteredCode = ""

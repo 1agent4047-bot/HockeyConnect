@@ -254,12 +254,13 @@ struct AuthView: View {
         do {
             if isSignUp {
                 _ = try await AuthService.shared.createAccountWithEmail(email, password: password)
-                // Move to email-code verification BEFORE proceeding.
                 sendEmailCode()
                 withAnimation(.spring(response: 0.45)) { phase = .emailCode }
             } else {
                 _ = try await AuthService.shared.signInWithEmail(email, password: password)
-                onSuccess()
+                // Send a 6-digit code for sign-in too, same as sign-up.
+                sendEmailCode()
+                withAnimation(.spring(response: 0.45)) { phase = .emailCode }
             }
         } catch {
             authVM.errorMessage = error.localizedDescription
